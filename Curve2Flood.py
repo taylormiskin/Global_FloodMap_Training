@@ -477,7 +477,7 @@ def Remove_Crop_Circles(flood_gdf, StrmShp_File, s_output_filename):
     #flood_gdf = gpd.sjoin(flood_gdf, strm_gdf, how="inner", op="intersects")
     flood_gdf = gpd.sjoin(flood_gdf, strm_gdf, how="inner", predicate="intersects")
 
-    shp_output_filename = f"{s_output_filename[:-4]}.shp"
+    shp_output_filename = f"{s_output_filename[:-4]}.gpkg"
 
     flood_gdf.to_file(shp_output_filename)
 
@@ -1012,8 +1012,7 @@ if __name__ == "__main__":
         StrmShp_File = ReadInputFile(lines,'StrmShp_File')
         Flood_File = ReadInputFile(lines,'OutFLD')
         FloodImpact_File = ReadInputFile(lines,'FloodImpact_File')
-        FlowFileName = ReadInputFile(lines,'COMID_Flow_File')
-        FlowFileName = ReadInputFile(lines,'Comid_Flow_File')
+        FlowFileName = ReadInputFile(lines,'COMID_FlowFile')
         VDTDatabaseFileName = ReadInputFile(lines,'Print_VDT_Database')
         CurveParamFileName = ReadInputFile(lines,'Print_Curve_File')
         Q_Fraction = ReadInputFile(lines,'Q_Fraction')

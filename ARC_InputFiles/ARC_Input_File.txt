@@ -1,9 +1,11 @@
 #ARC_Inputs
 DEM_File	C:\Users\water\Desktop\AAAA\Nepal_Test_Case\AutomatedRatingCurve_TestCase-main\DEM\Kathmandu_DEM.tif
 Stream_File	STRM/STRM_Raster_Clean.tif
+StrmShp_File	C:\Users\water\Desktop\AAAA\Nepal_Test_Case\AutomatedRatingCurve_TestCase-main\StrmShp\StreamLines_Kathmandu.shp
 LU_Raster_SameRes	LAND/LAND_Raster.tif
 LU_Manning_n	LAND/AR_Manning_n_for_NLCD_MED.txt
-COMID_Flow_File	FLOW/FlowFile.txt
+Flow_File	FLOW/FlowFile.txt
+COMID_FlowFile  FLOW/COMID_FlowFile.txt
 Flow_File_ID	COMID
 Flow_File_BF	rp2
 Flow_File_QMax	qout_max
@@ -15,6 +17,7 @@ Low_Spot_Range	10
 Str_Limit_Val	1
 Gen_Dir_Dist	10
 Gen_Slope_Dist	10
+LC_Water_Value	11
 
 #VDT_Output_File_and_CurveFile
 Print_VDT_Database	VDT/VDT_Database.txt
@@ -23,7 +26,6 @@ Print_Curve_File	VDT/CurveFile.csv
 #VDT_File_For_TestingPurposes_Only
 Print_VDT	VDT/VDT_FS.csv
 OutFLD	FloodMap/ARC_Flood.tif
+AROutDEPTH	FloodMap/ARC_Depth.tif
+AROutFLOOD	FloodMap/ARC_Flood.tif
 
-#Bathymetry_Information
-Bathy_Trap_H	0.20
-AROutBATHY	Bathymetry/ARC_Bathy.tif
