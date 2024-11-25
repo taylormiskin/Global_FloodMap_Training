@@ -20,8 +20,7 @@ import netCDF4   #conda install netCDF4
 def Process_AutoRoute_Geospatial_Data(Main_Directory):
     
     #Input Dataset
-    ARC_Folder = 'ARC_InputFiles'
-    ARC_FileName = os.path.join(ARC_Folder, 'Gardiner_ARC_Input_File.txt')
+    ARC_FileName = os.path.join(Main_Directory,'ARC_InputFiles','ARC_Input_File.txt')
     DEM_File = os.path.join(Main_Directory, 'DEM', 'Kathmandu_DEM.tif')
     LandCoverFile = os.path.join(Main_Directory, 'LandCover', 'Kathmandu_Landcover.tif')
     StrmSHP = os.path.join(Main_Directory, 'StrmShp', 'StreamLines_Kathmandu.shp')
@@ -29,20 +28,20 @@ def Process_AutoRoute_Geospatial_Data(Main_Directory):
     VDT_Test_File = os.path.join(Main_Directory, 'VDT', 'VDT_FS.csv')
     
     #Datasets to be Created
-    STRM_File = r'STRM/STRM_Raster.tif'
+    STRM_File = os.path.join(Main_Directory,'STRM','STRM_Raster.tif')
     STRM_File_Clean = STRM_File.replace('.tif','_Clean.tif')
-    LAND_File = r'LAND/LAND_Raster.tif'
-    FLOW_File = r'FLOW/FlowFile.txt'
-    FlowFileFolder = r'FlowFile'
-    BathyFileFolder = r'Bathymetry'
-    FloodFolder = 'FloodMap'
-    ARC_Folder = 'ARC_InputFiles'
-    ManningN = 'LAND/AR_Manning_n_for_NLCD_MED.txt'
-    VDT_File = 'VDT/VDT_Database.txt'
-    Curve_File = 'VDT/CurveFile.csv'
-    FloodMapFile = FloodFolder + '/' + 'ARC_Flood.tif'
-    DepthMapFile = FloodFolder + '/' + 'ARC_Depth.tif'
-    ARC_BathyFile = BathyFileFolder + '/' + 'ARC_Bathy.tif'
+    LAND_File = os.path.join(Main_Directory,'LAND','LAND_Raster.tif')
+    FLOW_File = os.path.join(Main_Directory,'FLOW','FlowFile.txt')
+    FlowFileFolder = os.path.join(Main_Directory,'FlowFile')
+    BathyFileFolder = os.path.join(Main_Directory,'Bathymetry')
+    FloodFolder = os.path.join(Main_Directory,'FloodMap')
+    ARC_Folder = os.path.join(Main_Directory,'ARC_InputFiles')
+    ManningN = os.path.join(Main_Directory,'LAND','AR_Manning_n_for_NLCD_MED.txt')
+    VDT_File = os.path.join(Main_Directory,'VDT','VDT_Database.txt')
+    Curve_File = os.path.join(Main_Directory,'VDT','CurveFile.csv')
+    FloodMapFile = os.path.join(Main_Directory,'FloodFolder','ARC_Flood.tif')
+    DepthMapFile = os.path.join(Main_Directory,'FloodFolder','ARC_Depth.tif')
+    ARC_BathyFile = os.path.join(Main_Directory,'BathyFileFolder','ARC_Bathy.tif')
     
     #Create Folders
     Create_Folder('STRM')
