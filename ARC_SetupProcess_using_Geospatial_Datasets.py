@@ -23,11 +23,11 @@ def Process_AutoRoute_Geospatial_Data():
     Main_Directory = ''
     ARC_Folder = 'ARC_InputFiles'
     ARC_FileName = os.path.join(ARC_Folder, 'Gardiner_ARC_Input_File.txt')
-    DEM_File = r"C:\Users\water\Desktop\AAAA\Nepal_Test_Case\AutomatedRatingCurve_TestCase-main\DEM\Kathmandu_DEM.tif"
-    LandCoverFile = r"C:\Users\water\Desktop\AAAA\Nepal_Test_Case\AutomatedRatingCurve_TestCase-main\LandCover\Kathmandu_Landcover.tif"
-    StrmSHP = r"C:\Users\water\Desktop\AAAA\Nepal_Test_Case\AutomatedRatingCurve_TestCase-main\StrmShp\StreamLines_Kathmandu.shp"
-    FlowNC = r"C:\Users\water\Desktop\AAAA\Nepal_Test_Case\AutomatedRatingCurve_TestCase-main\FlowData\returnperiods_409.nc"
-    VDT_Test_File = r'VDT/VDT_FS.csv'
+    DEM_File = os.path.join(Main_Directory, 'DEM', 'Kathmandu_DEM.tif')
+    LandCoverFile = os.path.join(Main_Directory, 'LandCover', 'Kathmandu_Landcover.tif')
+    StrmSHP = os.path.join(Main_Directory, 'StrmShp', 'StreamLines_Kathmandu.shp')
+    FlowNC = os.path.join(Main_Directory, 'FlowData', 'returnperiods_409.nc')
+    VDT_Test_File = os.path.join(Main_Directory, 'VDT', 'VDT_FS.csv')
     
     #Datasets to be Created
     STRM_File = r'STRM/STRM_Raster.tif'
