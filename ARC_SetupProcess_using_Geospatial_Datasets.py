@@ -52,7 +52,7 @@ def Process_AutoRoute_Geospatial_Data(Main_Directory):
     Create_Folder(FlowFileFolder)
     Create_Folder(ARC_Folder)
     Create_Folder(BathyFileFolder)
-    Create_Folder(os.path.join(Main_Directory,'ARC_BathyFile'))
+    Create_Folder(os.path.join(Main_Directory,'BathyFileFolder'))
     
     
     
