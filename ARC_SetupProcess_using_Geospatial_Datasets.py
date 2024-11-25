@@ -17,10 +17,9 @@ import numpy as np
 import netCDF4   #conda install netCDF4
 
 
-def Process_AutoRoute_Geospatial_Data():
+def Process_AutoRoute_Geospatial_Data(Main_Directory):
     
     #Input Dataset
-    Main_Directory = ''
     ARC_Folder = 'ARC_InputFiles'
     ARC_FileName = os.path.join(ARC_Folder, 'Gardiner_ARC_Input_File.txt')
     DEM_File = os.path.join(Main_Directory, 'DEM', 'Kathmandu_DEM.tif')
@@ -452,6 +451,9 @@ def Clean_STRM_Raster(STRM_File, STRM_File_Clean):
     return
 
 if __name__ == "__main__":
-    
-    Process_AutoRoute_Geospatial_Data()
+    if len(sys.argv) > 1:
+        folder = sys.argv[1]
+    else:
+        folder = os.getcwd()
+    Process_AutoRoute_Geospatial_Data(folder)
     
