@@ -39,8 +39,8 @@ def Process_AutoRoute_Geospatial_Data(Main_Directory):
     ManningN = os.path.join(Main_Directory,'LAND','AR_Manning_n_for_NLCD_MED.txt')
     VDT_File = os.path.join(Main_Directory,'VDT','VDT_Database.txt')
     Curve_File = os.path.join(Main_Directory,'VDT','CurveFile.csv')
-    FloodMapFile = os.path.join(Main_Directory,'FloodFolder','ARC_Flood.tif')
-    DepthMapFile = os.path.join(Main_Directory,'FloodFolder','ARC_Depth.tif')
+    FloodMapFile = os.path.join(FloodFolder,'ARC_Flood.tif')
+    DepthMapFile = os.path.join(FloodFolder,'ARC_Depth.tif')
     ARC_BathyFile = os.path.join(Main_Directory,'BathyFileFolder','ARC_Bathy.tif')
     
     #Create Folders
