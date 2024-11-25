@@ -15,7 +15,7 @@ The ARC-generated rating curves can then be used to create flood maps.  Here, we
     Streamlines are from GeoGLoWS - http://geoglows-v2.s3-website-us-west-2.amazonaws.com/#streams/
     Return period flow data is from GeoGLoWS - http://geoglows-v2-retrospective.s3-website-us-west-2.amazonaws.com/#return-periods/
 
-# Python Scripts [Slightly adjusted for purposed of test case]
+# Python Scripts
     Curve2Flood: https://github.com/MikeFHS/curve2flood
     ARC [Automated Rating Curve]: https://github.com/MikeFHS/automated-rating-curve
     Similar Test Case created by FSH [Mike Follum]: https://sites.google.com/follumhydro.com/automated-rating-curve-arc
