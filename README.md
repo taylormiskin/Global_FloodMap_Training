@@ -1,4 +1,4 @@
-# AutomatedRatingCurve_TestCase
+# Global FloodMapping Test case
 Test case using the Automated Rating Curve (ARC) and Curve2Flood
 
 The Automated Rating Curve (ARC) is a python-based model that generates rating-curve information (depth, velocity, top-width) along streams.  ARC is typically used for large-scale applications (e.g., the Yellowstone BAsin), but can also be applied to smaller domains.  Inputs to ARC are peak- and base-flow data for each stream reach (often from continental-scale flow models) and geospatial data (land cover, DEM, stream shapefile).  ARC uses a simple approach to simulate a bathymetry profile within the DEM (https://doi.org/10.1016/j.jhydrol.2023.129769).  Using a volume-fill approach of Manning's Equation, mulitple flow rates are simulated.  Parameters (a and b) for a power-function are then generated where depth, velocity, and top-width are calculated as a function of flow (Q).  For example, Depth = a *Q^b.
