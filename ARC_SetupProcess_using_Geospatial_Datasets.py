@@ -44,10 +44,10 @@ def Process_AutoRoute_Geospatial_Data(Main_Directory):
     ARC_BathyFile = os.path.join(Main_Directory,'BathyFileFolder','ARC_Bathy.tif')
     
     #Create Folders
-    Create_Folder('STRM')
-    Create_Folder('LAND')
-    Create_Folder('FLOW')
-    Create_Folder('VDT')
+    Create_Folder(os.path.join(Main_Directory,'STRM'))
+    Create_Folder(os.path.join(Main_Directory,'LAND'))
+    Create_Folder(os.path.join(Main_Directory,'FLOW'))
+    Create_Folder(os.path.join(Main_Directory,'VDT'))
     Create_Folder(FloodFolder)
     Create_Folder(FlowFileFolder)
     Create_Folder(ARC_Folder)
